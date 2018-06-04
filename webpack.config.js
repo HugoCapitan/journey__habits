@@ -14,6 +14,7 @@ module.exports = {
     filename: 'app.js',
     publicPath: '/dist/'
   },
+  mode: 'development',
   devtool: 'cheap-module-source-map',
   module: {
     rules: [{
