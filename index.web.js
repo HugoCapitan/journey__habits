@@ -1,6 +1,6 @@
 const express = require('express')
 const http    = require('http')
-const path    = require('http')
+const path    = require('path')
 
 const server  = express()
 const app     = require
@@ -21,6 +21,10 @@ server.use(webpackDevMiddleware(compiler, {
 server.use(webpackHotMiddleware(compiler, {
   quiet: true
 }))
+
+server.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'index.html'))
+})
 
 http.Server(server).listen(8080, () => {
   console.log("Server listening on port 8080")
