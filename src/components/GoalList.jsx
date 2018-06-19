@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 
 import AddGoalTooltip from './AddGoalTooltip'
+import GoalCard from './GoalCard'
 
 const styles = {
   root: {
