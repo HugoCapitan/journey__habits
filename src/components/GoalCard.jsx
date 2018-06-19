@@ -10,7 +10,9 @@ const styles = theme => ({
 })
 
 const GoalCard = ({ classes }) => (
-
+  <div>
+    A goal...
+  </div>
 )
 
 export default withStyles(styles)(GoalCard)
