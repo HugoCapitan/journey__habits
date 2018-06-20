@@ -16,7 +16,7 @@ const styles = {
     backgroundColor: "lightgray"
   },
   root: {
-    display: 'flex',
+    position: 'absolute'
   },
   flex: {
     flex: 1, 
