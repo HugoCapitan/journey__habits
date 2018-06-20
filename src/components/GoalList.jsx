@@ -9,7 +9,9 @@ import GoalCard from './GoalCard'
 const styles = {
   root: {
     marginTop: '56px',
-    padding: '8px'
+    overflow: 'scroll',
+    padding: '8px',
+    paddingBottom: '80px'
   },
   nothingMessage: {
     position: 'absolute',
@@ -20,11 +22,17 @@ const styles = {
   }
 }
 
-const GoalList = ({ classes }) => (
+const GoalList = ({ classes, goals }) => (
   <div className={ classes.root }>
-    <Typography className={ classes.nothingMessage } color="textSecondary" variant="headline"> 
-      You have no goals yet!
-    </Typography>
+    { !goals.length 
+      ? <Typography className={ classes.nothingMessage } color="textSecondary" variant="headline"> 
+          You have no goals yet!
+        </Typography> 
+      : goals.map((goal, index) => (
+        <GoalCard key={index} goal={goal} />
+      ))
+    }
+    
     <AddGoalTooltip />
   </div>
 )
