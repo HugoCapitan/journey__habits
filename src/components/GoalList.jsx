@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography'
 
 import AddGoalTooltip from './AddGoalTooltip'
 import GoalCard from './GoalCard'
+import NewGoalDialog from './NewGoalDialog'
 
 const styles = {
   root: {
@@ -33,6 +34,7 @@ const GoalList = ({ classes, goals }) => (
       ))
     }
     
+    <NewGoalDialog />
     <AddGoalTooltip />
   </div>
 )
