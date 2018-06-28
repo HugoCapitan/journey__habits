@@ -9,3 +9,8 @@ This is an experiment, my goal is to create an app that helps me grow as a perso
 - Keep track of the habits I want to develop and how will those help me reach my goals.
 - Keep track of how I feel about my habits and my time spending.
  that
+
+### Specifically
+
+- The app should ask for user's values and goals.
+- The app should 
