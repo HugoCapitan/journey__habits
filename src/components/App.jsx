@@ -23,7 +23,7 @@ const styles = {
 
 const App = ({ classes }) => (
   <div className={ classes.root } >
-    <TopBar title="Habit Detail" />
+    <TopBar title="Ganar 6k de freelancing" />
     <HabitDetail />
   </div>
 )
