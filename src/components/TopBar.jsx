@@ -54,14 +54,14 @@ class TopBar extends React.Component {
   }
   
   render() {
-    const { classes } = this.props
+    const { classes, title } = this.props
     const { openViewMenu, selectedView } = this.state
 
     return (
       <AppBar className={classes.root}>
         <ToolBar>
           <Typography className={classes.flex} variant="title" color="inherit">
-            Goals
+            { title }
           </Typography>
           <IconButton 
             onClick={this.toggleViewMenu}
