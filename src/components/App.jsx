@@ -2,6 +2,7 @@ import React from 'react'
 
 import { withStyles } from '@material-ui/core/styles'
 
+import HabitDetail from './HabitDetail'
 import GoalList from './GoalList'
 import TopBar from './TopBar'
 
@@ -22,8 +23,8 @@ const styles = {
 
 const App = ({ classes }) => (
   <div className={ classes.root } >
-    <TopBar />
-    <GoalList goals={goals} />
+    <TopBar title="Habit Detail" />
+    <HabitDetail />
   </div>
 )
 
